@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &161001362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161001364}
+  - component: {fileID: 161001363}
+  - component: {fileID: 161001365}
+  m_Layer: 0
+  m_Name: Map  2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161001364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161001362}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0055825803, w: 0.9999845}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.64000005}
+--- !u!114 &161001363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161001362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbc6ac4e68aa114c8988fe14827e7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyCount: 0
+  enemyTiles:
+  - {fileID: 1158786379050549345, guid: c31cf537880b22e49999b4864f190622, type: 3}
+  - {fileID: 9122792112483246822, guid: 6cce63e70e0b7f44498aedeb05fc3c7d, type: 3}
+  - {fileID: 6771240211065210790, guid: 1d3bc87b24bb4614d9ae4ca526cb80cc, type: 3}
+  BlackSpace: {fileID: 6420103555520463646, guid: c7964a4af2cf8ad4fb22e31627ad7cae,
+    type: 3}
+  WallCount: 0
+  selectedUnit: {fileID: 0}
+  tileTypes:
+  - name: wallTiles
+    tileVisualPrefab: {fileID: 3994426632323322348, guid: b0da8e8afe5ec1f41b9abb656a530194,
+      type: 3}
+    isWalkable: 0
+    movementCost: 1
+  - name: floortiles
+    tileVisualPrefab: {fileID: 3400818968951995535, guid: c8ec0857b0e83eb4c86ff70b909814c7,
+      type: 3}
+    isWalkable: 1
+    movementCost: 1
+--- !u!114 &161001365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161001362}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb6349a0ad08374a8370a94473ec474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileTypes: []
+  EnemyCount: 0
+  enemyTiles:
+  - {fileID: 9122792112483246822, guid: 6cce63e70e0b7f44498aedeb05fc3c7d, type: 3}
+  - {fileID: 6771240211065210790, guid: 1d3bc87b24bb4614d9ae4ca526cb80cc, type: 3}
+  - {fileID: 1158786379050549345, guid: c31cf537880b22e49999b4864f190622, type: 3}
+  selectedUnit: {fileID: 0}
+  enemy1: {fileID: 5429889843855481973, guid: 455c91c968fbb234680f33c85259ef8c, type: 3}
+  timeBeforeSpawning: 1.5
+  timeBetweenEnemies: 0.25
+  timeBeforeWaves: 2
+  enemiesPerWave: 20
+  currentNumberOfEnemies: 0
